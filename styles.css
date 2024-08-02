@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Reset default browser styles */
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Applying Poppins as the primary font */
+  line-height: 1.6;
+  background-color: #000000;
+  color: #8400ffb1;
+  background-image: url('/Users/cameronacevedo/Desktop/New_website/Photos/Fly.mp4');
+  background-size: cover;
+background-repeat: no-repeat;
+  height: 100%; /* Ensure body takes up full height of viewport */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport */
+}
+
+/* Header styles */
+header {
+  background-color: #ffffff;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px; /* Optional: Add some padding for better spacing */
+  background-color: #f8f8f8;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+#searchForm {
+  margin-top: 10px;
+}
+
+#searchInput {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: #66afe9;
+}
+
+#searchForm button {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#searchForm button:hover {
+  background-color: #00eaff;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background-color: #000000;
+  border-radius: 4px;
+}
+
+/* Section styles */
+section {
+  padding: 20px;
+}
+
+.title3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.image-container img {
+  border-radius: 4px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  #searchInput {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.responsive-image {
+  max-width: 30%;
+  height: auto;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.video-footer {
+  position: relative;
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adds space between footer and video */
+}
+
+.footer-video {
+  width: 80%; /* Adjust the width to make the video smaller */
+  height: auto;
+  max-height: 100%;
+  object-fit: cover; /* Ensures the video covers the container while maintaining aspect ratio */
+}

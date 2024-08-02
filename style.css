@@ -1,0 +1,339 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20%;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    max-width: 500px;
+    margin: auto;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #F44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #FEFEFE;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+header form {
+    display: inline-block;
+    margin-top: 10px; /* Optional: Adjust the margin as needed */
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+header {
+    position: relative;
+    text-align: center;
+    padding: 20px; /* Optional: Add some padding for better spacing */
+    color: white; /* Ensure text is readable over the video */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("your-hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+.content .section {
+    flex: 1;
+    min-width: 300px;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content .section img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #8854bc;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure the video is behind other content */
+}
+
+/* Background video styling */
+.background-video {
+    position: auto;
+    top: 150%;
+    left: 150%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the container */
+    transform: translate(-50%, -50%);
+}
+.header-content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the video */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+/* Style the logo */
+.logo {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 20px; /* Space between the logo and the heading */
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure the video is behind other content */
+}
+
+/* Background video styling */
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Ensure the video is behind other content */
+}
+
+/* Center the header content */
+header {
+    position: relative;
+    text-align: center;
+    padding: 20px; /* Optional: Add some padding for better spacing */
+    color: white; /* Ensure text is readable over the video */
+}
+
+/* Style the logo */
+.logo {
+    max-width: 150px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the logo */
+}
+
+/* Center the form within the header */
+header form {
+    display: inline-block;
+    margin-top: 10px; /* Optional: Adjust the margin as needed */
+}
+
+/* Style the navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Optional: Adjust the margin as needed */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px; /* Adjust the spacing between nav items */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white; /* Ensure nav links are readable over the video */
+}
+
+/* Style the main content */
+main {
+    position: relative;
+    z-index: 1; /* Ensure the main content is above the video */
+    padding: 20px;
+    color: white; /* Ensure text is readable over the video */
+}
+
+/* Style the about section */
+.about-section {
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+}
+.photo-section {
+    text-align: center; /* Center align the photo */
+    padding: 20px;
+    background-color: #f5f5f5; /* Optional: Add a background color */
+}
+
+/* Make sure the image fits the page */
+.photo-image {
+    max-width: 100%; /* Ensure the image does not exceed the width of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is displayed as a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+}
+
+/* Center the footer content */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8; /* Optional: Add a background color */
+    flex-shrink: 0; /* Ensure footer stays at the bottom */
+}
